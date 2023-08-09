@@ -7,10 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
     "fix": "standard --fix"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.4",
+    "gh-pages": "^5.0.0",
     "standard": "^17.1.0",
     "vite": "^4.4.5"
   },
