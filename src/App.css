@@ -4,5 +4,35 @@ main {
     place-items: center;
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
     font-family: sans-serif;
   }
+
+.logo-container {
+  display: flex;
+  align-self: center;
+}
+
+.logo-container img {
+  width: 3rem;
+  height: auto;
+  padding-bottom: 18px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+section p {
+  font-size: large;
+  font-weight: bold;
+}
+
+section img {
+  margin-top: 1rem;
+  border-radius: 6px;
+}

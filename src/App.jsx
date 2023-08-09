@@ -28,9 +28,14 @@ export default function App () {
   }, [])
   return (
     <main>
-      <h1>Cat Facts App</h1>
-      {fact && <p>{fact}</p>}
-      {imageURL && <img src={`${CAT_IMAGE_PREFIX_URL}${imageURL}`} alt={`Image extraxted using the first three words from ${fact}`} />}
+      <div className='logo-container'>
+        <img src='/cat-solid.svg' alt='Cat Facts App logo' />
+        <h1>Cat Facts App</h1>
+      </div>
+      <section>
+        {fact && <p>{fact}</p>}
+        {imageURL && <img src={`${CAT_IMAGE_PREFIX_URL}${imageURL}`} alt={`Image extraxted using the first three words from ${fact}`} />}
+      </section>
     </main>
   )
 }
