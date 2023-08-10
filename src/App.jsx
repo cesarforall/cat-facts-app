@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import logoImage from '../public/cat-solid.svg'
 
 const RANDOM_FACTS_URL = 'https://catfact.ninja/fact'
 const CAT_IMAGE_PREFIX_URL = 'https://cataas.com/'
@@ -29,7 +30,7 @@ export default function App () {
   return (
     <main>
       <div className='logo-container'>
-        <img src='/cat-solid.svg' alt='Cat Facts App logo' />
+        <img src={logoImage} alt='Cat Facts App logo' />
         <h1>Cat Facts App</h1>
       </div>
       <section>
